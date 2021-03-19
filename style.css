@@ -1,0 +1,445 @@
+@import "media.css";
+@import "fonts.css";
+@import "media.css";
+
+:root {
+    --fonts: #353b49;
+    --red: #f24463;
+}
+
+
+html {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    color: #faede7;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 0px 15px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    position: relative;
+    padding-top: 33px;
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #353b49;
+}
+
+.btn--small {
+    padding: 5px 15px;
+    border-radius: 100px;
+    background-color: var(--red);
+}
+
+/* star main======================================================================== */
+
+.main {
+    background-image: url(images/bgg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 994px;
+}
+
+.main__top {
+    margin-bottom: 235px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.main__logo {
+    display: block;
+    position: relative;
+    padding-left: 65px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #faede7;
+}
+
+.main__logo:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -22px;
+    background-image: url(images/icons/dumpling\ 1.svg);
+    width: 55px;
+    height: 55px;
+}
+
+.main__paragrah {
+    display: inline-block;
+    margin: 0;
+    padding: 13px 31px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.main__paragrah:hover {
+    border: 2px solid #f24463;
+    border-radius: 100px;
+    transition: all 0.3s;
+}
+
+.main__link {
+    color: #fff;
+}
+
+.main__telephone {
+    color: #fff;
+    padding-left: 27px;
+    position: relative;
+    font-weight: 600;
+}
+
+.main__city {
+    display: none;
+    position: relative;
+    text-align: right;
+    padding-left: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.main__city::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    background-image: url(images/icons/location_outline.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+}
+
+.main__telephone:after {
+    content: "";
+    position: absolute;
+    background-image: url(images/icons/phone.svg);
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    top: 0px;
+}
+
+.main__menu {
+    display: none;
+}
+
+.main__burger {
+    display: none;
+}
+
+.main__title {
+    margin-bottom: 20px;
+    width: 500px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 123%;
+}
+
+.main__text {
+    margin-bottom: 30px;
+    width: 500px;
+    line-height: 150%;
+    font-weight: 500;
+    color: #aca6a7;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 20px 60px;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #faede7;
+    background-color: #f24463;
+    transition: 0.3s;
+}
+
+.btn-link:hover {
+    box-shadow: 0px 7px 14px rgba(240, 32, 81, 0.66);
+    transition: 0.3s;
+}
+
+/* end main=========================================================== */
+
+/* start advantages ============================================================== */
+
+.advantages {
+    padding-top: 133px;
+    padding-bottom: 200px;
+}
+
+.advantages__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 7px;
+    background-color: #f24463;
+    left: 0;
+    top: 0;
+    border-radius: 100px;
+}
+
+.advantages__item {
+    width: 350px;
+    position: relative;
+}
+
+.advantages__item::before {
+    content:'01';
+    position: absolute;
+    top: -6px;
+    right: 0;
+    color: var(--red);
+    font-size: 89px;
+    font-weight: 600;
+    opacity: 30%;
+}
+
+.advantages__item-title {
+    width: 255px;
+    position: relative;
+    margin-bottom: 21px;
+    padding-top: 107px;
+    font-weight: 800;
+    line-height: 123%;
+    color: #353b49;
+}
+
+.advantages__item-title::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 80px;
+    background-image: url(images/icons/meat\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+/* .advantages__item-title::before {
+    content: "01";
+    position: absolute;
+    color: #f24463;
+    font-size: 89px;
+    font-weight: 600;
+    color: #f24463;
+    opacity: 30%;
+    top: 33px;
+    right: -94px;
+} */
+
+.advantages__item-title--02::after {
+    background-image: url(images/icons/kitchen-pack\ 2.svg);
+    height: 90px;
+}
+
+.advantages__item--02::before {
+    content: "02";
+}
+
+.advantages__item-title--03::after {
+    background-image: url(images/icons/van\ 2.svg);
+}
+
+.advantages__item--03::before {
+    content: "03";
+}
+
+.advantages__item-text {
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 500;
+    color: #353b49;
+    opacity: 70%;
+}
+/* end advantages ======================================================================== */
+
+/* start product ======================================================================== */
+.products {
+    padding-bottom: 200px;
+}
+
+.products__item {
+    width: 584px;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.05);
+}
+
+.products__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* .products__item-box {
+    display: flex;
+} */
+
+.products__item-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__item-box {
+    width: 300px;
+    color: var(--fonts);
+}
+
+.products__item-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.products__item-text {
+    font-size: 14px;
+    line-height: 144%;
+    opacity: 70%;
+}
+
+.products__prise {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.products__mone,
+.products__weit {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.products__mone {
+    color: #fff;
+}
+
+.products__weit {
+    /* width: 42px; */
+    color: var(--fonts);
+    background-color: #f7d3c3;
+    white-space: pre;
+}
+
+/* end product ======================================================================== */
+
+/* start company ====================================================================== */
+.company__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company__text {
+    width: 600px;
+    line-height: 150%;
+    color: var(--fonts);
+    opacity: 70%;
+}
+
+.company__parag {
+    margin-bottom: 35px;
+}
+/* end company ====================================================================== */
+
+/* start footer =================================================================== */
+.footer {
+    padding-top: 50px;
+    min-height: 120px;
+    background-color: var(--fonts);
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__telephone {
+    display: block;
+}
+
+.footer__city {
+    position: relative;
+    text-align: right;
+    padding-left: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer__city::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 20px;
+    background-image: url(images/icons/location_outline.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 0;
+}
+
+.footer__addres {
+    text-align: right;
+}
+
+.main__paragrah--small {
+    margin-left: -20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* end footer========================================================================== */
